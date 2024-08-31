@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Display</title>
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+
+  <!-- Main container with border frame -->
+  <div class="main-container">
+    
+    <!-- Title frame for the caption -->
+    <div class="main-title-frame">
+      <h1 class="main-title">ALT SCHOOL AFRICA MEDIA ASSIGNMENT</h1>
+    </div>
+
+    <!-- Media display container -->
+    <div class="media-display-container">
+      <!-- Media Box to display content dynamically -->
+      <div id="mediaBox" class="media-box">
+        <!-- Content will be loaded here based on button click -->
+      </div>
+      
+      <!-- Buttons to switch between media types -->
+      <div class="media-controls">
+        <button onclick="showMedia('video')">Video</button>
+        <button onclick="showMedia('picture')">Picture</button>
+        <button onclick="showMedia('audio')">Audio</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <nav>
+      <a href="#">Go to top</a>
+      <a href="index.html">about us</a>
+      <a href="form.html">Sign up</a>
+      <a href="Schools.html">schools</a>
+    </nav>
+  </footer>
+
+  <script>
+    function showMedia(type) {
+      const mediaBox = document.getElementById('mediaBox');
+      mediaBox.innerHTML = ''; // Clear previous content
+
+      if (type === 'video') {
+        mediaBox.innerHTML = `
+          <video width="100%" height="100%" controls>
+            <source src="Assets/videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        `;
+      } else if (type === 'picture') {
+        mediaBox.innerHTML = `
+          <img src="Assets/Images/picture.png" alt="Sample Image" width="100%" height="100%">
+        `;
+      } else if (type === 'audio') {
+        mediaBox.innerHTML = `
+          <audio controls>
+            <source src="Assets/Audios/audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        `;
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Set the color for the bold topics */
+h2 {
+  color: blue;  /* Make headings blue */
+  text-align: center;
+}
+
+h5{
+  color: black;  /* Make headings blue */
+  text-align: left;
+  font-size: 24px;
+}
+
+  /* Styles from Content 1 */
+p {
+  color: black;
+  font-size: 20px; /* Corrected to be on a new line */
+}
+
+footer {
+  display: flex;            /* Use Flexbox for alignment */
+  justify-content: center;  /* Center the nav horizontally */
+  align-items: center;      /* Center items vertically (if needed) */
+  padding: 20px;            /* Add some padding for spacing */
+  background-color: #f1f1f1; /* Optional: Add a background color to the footer */
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer nav {
+  display: flex;            /* Use Flexbox within the nav */
+  gap: 20px;                /* Add some space between links */
+}
+
+/* Styles from Content 2 */
+body {
+  background-color: rgb(229, 241, 237);
+}
+
+hr {
+  width: 20%;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 6px;
+  height: 0;
+  border-color: #192020;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  padding: 30px 10px 0 10px;
+}
+
+.sign {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
